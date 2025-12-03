@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>我的空间 · LOONOOL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">L</span>
+        <span class="logo-text">LOONOOL · 我的空间</span>
+      </div>
+      <nav class="nav">
+        <a href="#" class="nav-link">首页</a>
+        <a href="#" class="nav-link">帮助中心</a>
+        <button class="btn btn-text" id="btn-ms-login">登录</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="container">
+      <h1>我的空间 My Spaces</h1>
+      <p class="page-desc">
+        这里会列出你创建或加入的所有图片审核空间。点击任一空间即可进入对应的审核空间页面（在实际部署中指向审核空间站点）。
+      </p>
+      <button class="btn btn-primary" id="btn-ms-create">
+        + 创建新的审核空间
+      </button>
+
+      <div id="space-list" class="space-list">
+        <!-- 由 app.js 用假数据渲染 -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2025 LOONOOL</span>
+      <div class="footer-links">
+        <a href="#">返回首页</a>
+        <a href="#">帮助中心</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
